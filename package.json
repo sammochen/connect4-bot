@@ -6,9 +6,9 @@
   "scripts": {
     "start": "npx node dist/index.js",
     "build:ts": "npx tsc",
-    "build:cpp:initgyp": "autogypi --init-gyp -p nbind -s src/cpp/**.cpp",
+    "build:cpp:initgyp": "autogypi --init-gyp -p nbind -s cpp/src/Game.cpp -s cpp/src/NegamaxBot.cpp",
     "build:cpp:build": "node-gyp configure build",
-    "build:cpp:types": "ndts . > src/ts/types/lib-types.d.ts",
+    "build:cpp:types": "ndts . > ts/src/types/lib-types.d.ts",
     "build:cpp": "npm run build:cpp:initgyp && npm run build:cpp:build && npm run build:cpp:types",
     "build": "npm run build:cpp && npm run build:ts",
     "clean:ts": "rm -rf dist",

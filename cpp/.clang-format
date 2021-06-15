@@ -1,0 +1,6 @@
+---
+Language: Cpp
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+...
+
