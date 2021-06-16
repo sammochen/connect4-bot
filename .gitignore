@@ -1,17 +1,3 @@
 .vscode
 node_modules
 
-# C++ build
-build
-
-# TS build
-dist
-
-# Binds
-auto-top.gypi
-auto.gypi
-autogypi.json
-binding.gyp
-
-
-
