@@ -1,26 +1,25 @@
 {
   "name": "connect4-bot",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "npx node dist/index.js",
+    "start": "npx node index.js",
     "build:ts": "npx tsc",
-    "build:cpp:initgyp": "autogypi --init-gyp -p nbind -s cpp/src/Game.cpp -s cpp/src/NegamaxBot.cpp",
-    "build:cpp:build": "node-gyp configure build",
-    "build:cpp:types": "ndts . > ts/src/types/lib-types.d.ts",
-    "build:cpp": "npm run build:cpp:initgyp && npm run build:cpp:build && npm run build:cpp:types",
+    "build:cpp": "node-gyp configure build",
     "build": "npm run build:cpp && npm run build:ts",
     "clean:ts": "rm -rf dist",
-    "clean:cpp": "rm -rf build auto-top.gypi auto.gypi autogypi.json binding.gyp",
+    "clean:cpp": "node-gyp clean",
     "clean": "npm run clean:ts && npm run clean:cpp"
   },
   "author": "sammochen",
   "license": "ISC",
   "dependencies": {
+    "@types/bindings": "^1.5.0",
     "bindings": "^1.5.0",
     "node-addon-api": "^4.0.0",
-    "node-gyp": "^8.1.0"
+    "node-gyp": "^8.1.0",
+    "typescript": "^4.3.2"
   },
   "devDependencies": {
     "@types/node": "^15.12.2"
