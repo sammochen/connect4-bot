@@ -1,5 +1,0 @@
-/Users/shihhaochen/Repos/connect4-bot/cpp/build/CMakeFiles/rebuild_cache.dir
-/Users/shihhaochen/Repos/connect4-bot/cpp/build/CMakeFiles/edit_cache.dir
-/Users/shihhaochen/Repos/connect4-bot/cpp/build/CMakeFiles/test.dir
-/Users/shihhaochen/Repos/connect4-bot/cpp/build/CMakeFiles/Connect4Tests.dir
-/Users/shihhaochen/Repos/connect4-bot/cpp/build/CMakeFiles/Connect4Solver.dir
